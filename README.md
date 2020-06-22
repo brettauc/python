@@ -37,25 +37,25 @@ need to:
 
 Complete the following:
 
-x * Read in `menu_data.csv` and set its contents to a separate list object. (This way, you can cross-reference your menu data with your sales data as you read in your sales data in the coming steps.)
+ * Read in `menu_data.csv` and set its contents to a separate list object. (This way, you can cross-reference your menu data with your sales data as you read in your sales data in the coming steps.)
 
-x  * Initialize an empty `menu` list object to hold the contents of `menu_data.csv`.
+  * Initialize an empty `menu` list object to hold the contents of `menu_data.csv`.
 
-x  * Use a `with` statement and open the `menu_data.csv` by using its file path.
+  * Use a `with` statement and open the `menu_data.csv` by using its file path.
 
-x  * Use the `reader` function from the `csv` library to begin reading `menu_data.csv`.
+  * Use the `reader` function from the `csv` library to begin reading `menu_data.csv`.
 
-x  * Use the `next` function to skip the header (first row of the CSV).
+  * Use the `next` function to skip the header (first row of the CSV).
 
-x  * Loop over the rest of the rows and append every row to the `menu` list object (the outcome will be a list of lists).
+  * Loop over the rest of the rows and append every row to the `menu` list object (the outcome will be a list of lists).
 
-x* Set up the same process to read in `sales_data.csv`. However, instead append every row of the sales data to a new `sales` list object.
+* Set up the same process to read in `sales_data.csv`. However, instead append every row of the sales data to a new `sales` list object.
 
 ### Manipulate the Data
 
 Complete the following:
 
-x* Initialize an empty `report` dictionary to hold the future aggregated per-product results. The `report` dictionary will eventually contain the following metrics:
+* Initialize an empty `report` dictionary to hold the future aggregated per-product results. The `report` dictionary will eventually contain the following metrics:
 
   * `01-count`: the total quantity for each ramen type
 
@@ -65,14 +65,14 @@ x* Initialize an empty `report` dictionary to hold the future aggregated per-pro
 
   * `04-profit`: the total profit for each ramen type
 
-x* Then, loop through every row in the `sales` list object.
+* Then, loop through every row in the `sales` list object.
 
-x  * For each row of the `sales` data, set the following columns of the sales data to their own variables:
+  * For each row of the `sales` data, set the following columns of the sales data to their own variables:
 
     * Quantity
     * Menu_Item
 
-x  * Perform a quick check if the `sales_item` is already included in the `report`. If not, initialize the key-value pairs for the particular `sales_item` in the report. Then, set the `sales_item` as a new key to the `report` dictionary and the values as a nested dictionary containing the following:
+* Perform a quick check if the `sales_item` is already included in the `report`. If not, initialize the key-value pairs for the particular `sales_item` in the report. Then, set the `sales_item` as a new key to the `report` dictionary and the values as a nested dictionary containing the following:
 
     ```python
     {
@@ -85,7 +85,7 @@ x  * Perform a quick check if the `sales_item` is already included in the `repor
 
 * Create a nested loop by looping through every record in `menu`.
 
-x  * For each row of the `menu` data, set the following columns of the menu data to their own variables:
+  * For each row of the `menu` data, set the following columns of the menu data to their own variables:
 
     * Item
     * Price
@@ -119,3 +119,6 @@ x  * For each row of the `menu` data, set the following columns of the menu data
   burnt garlic tonkotsu ramen {'01-count': 9070, '02-revenue': 126980.0, '03-cogs': 54420.0, '04-profit': 72560.0}
   vegetarian curry + king trumpet mushroom ramen {'01-count': 8824, '02-revenue': 114712.0, '03-cogs': 61768.0, '04-profit': 52944.0}
   ```
+  
+  
+    
