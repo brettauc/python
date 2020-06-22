@@ -72,16 +72,7 @@ Complete the following:
     * Quantity
     * Menu_Item
 
-* Perform a quick check if the `sales_item` is already included in the `report`. If not, initialize the key-value pairs for the particular `sales_item` in the report. Then, set the `sales_item` as a new key to the `report` dictionary and the values as a nested dictionary containing the following:
-
-    ```python
-    {
-    "01-count": 0,
-    "02-revenue": 0,
-    "03-cogs": 0,
-    "04-profit": 0,
-    }
-    ```
+* Perform a quick check if the `sales_item` is already included in the `report`. If not, initialize the key-value pairs for the particular `sales_item` in the report. Then, set the `sales_item` as a new key to the `report` dictionary and the values as a nested dictionary containing the four metrics from above.
 
 * Create a nested loop by looping through every record in `menu`.
 
@@ -93,14 +84,8 @@ Complete the following:
 
   * If the `sales_item` in sales is equal to the `item` in `menu`, capture the `quantity` from the sales data and the `price` and `cost` from the menu data to calculate the `profit` for each item.
 
-    * Cumulatively add the values to the corresponding metrics in the report like so:
+    * Cumulatively add the values to the corresponding metrics in the report.
 
-      ```python
-      report[sales_item]["01-count"] += quantity
-      report[sales_item]["02-revenue"] += price * quantity
-      report[sales_item]["03-cogs"] += cost * quantity
-      report[sales_item]["04-profit"] += profit * quantity
-      ```
 
   * Else print the message "{sales_item} does not equal {item}! NO MATCH!".
 
